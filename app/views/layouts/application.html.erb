@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <navbar>
+      <%= link_to "About", pages_about_path %>
+      <%= link_to "Contact", pages_contact_path %>
+
+    </navbar>
     <%= yield %>
+    <p>&copy; 2018</p>
   </body>
 </html>
