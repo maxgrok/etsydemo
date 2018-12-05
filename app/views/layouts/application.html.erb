@@ -10,12 +10,8 @@
   </head>
 
   <body>
-    <navbar>
-      <%= link_to "About", pages_about_path %>
-      <%= link_to "Contact", pages_contact_path %>
-
-    </navbar>
+    <%= render 'layouts/header' %>
     <%= yield %>
-    <p>&copy; 2018</p>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
